@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Franklin's Blog</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">         
+                <h1 class="text-center">Franklin's Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item active"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">          
+            <div class="row tm-row">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55">
+                    <!-- Video player 1422x800 -->
+                    <video width="954" height="535" controls class="tm-mb-40">
+                        <source src="video/wheat-field.mp4" type="video/mp4">							  
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="row tm-row">
+                <div class="col-lg-12 tm-post-col">
+                    <div class="tm-post-full">                    
+                        <div class="mb-4">
+                            <h2 class="pt-2 tm-color-primary tm-post-title">ChatGPT, Geoffrey Hinton, Fundamental Structure, and Beyond</h2>
+                            <p class="tm-mb-40">Mar 8, 2023 posted by Franklin Ren</p>
+                            <p>
+                                Since the release of ChatGPT in late 2022, discussions have once again been raised about whether AGI is achievable in our generation. Partly because the power of large language generative models has exceeded the expectation of many - whether inside the AI research community or not - and brought their imagination about what AI could do to another level.
+                                The last time when we see a phenomenon like this is the AlphaGo moment, where Go - considered to be one of the most challenging tasks for the human brain - was overcome by an amazing deep reinforcement learning algorithm, and allowed people to imagine that the level of intelligence of AI algorithm will surpass human in a few years.
+                                Now, of course, we already know the speculation at that time was over-optimistic. The generalizability of deep learning algorithms stays a huge problem for many years, and researchers have to train those not-so-cool downstream task models one by one, hoping that one of them could turn into profit for the industry. The release of ChatGPT during NeurIPS 2022 seems to bring back people's optimism about AI to the world, whereas a large language model (LLM) seems to have the generalizability of hundreds of different NLP tasks.
+                                Many AI researchers, including Ilya Sustkever, claimed that artificial general intelligence (AGI) is already on the level of the horizon in our generation.
+                            </p>
+                            <p>
+                                During such a wave of enthusiasm and revelry, one man does not seem to be that excited. We have not heard any comments from him, whether publicly or not, about the recent progress of large language models. Neither have we heard about any kind of follow-up work he proposed to catch up on the paradigm shift from small, separate language tasks to more generalizable large language models. The only time we saw him was when he proposed a brand-new fundamental AI structure in a venerable venue, and urged people, using his 74-year-old yet very vibrant voice, to RETHINK THE FUNDAMENTAL STRUCTURE in the field of AI.
+                                If some other people question the power of the deep neural network, possibly people will think that he or she is mad. But when this man talked about it, everyone - at least those within the AI community - have to take it seriously.
+                            </p>
+                            <p>
+                                This man is Geoffrey Hinton, appearing on the venue of NeurIPS again, 10 years after his amazing AlexNet algorithm opens the door for the deep learning we all know today. People talk about him and write stories about him, on how he and his group bring a widely-considered-to-be-dead AI framework to one of the most probable ways to achieve AGI. Now he sitting virtually at the conference, asking people to calm down, claiming that what he helped create is not - and never be - the optimal path to AGI.
+                                In his talk, Hinton reinstated his disbelief that human brains are learning in a back propagation way - the way we use in all deep learning algorithms. He also pointed out that all current computer programs, including deep learning algorithms, are written based on a way that they only do what humans ask them to do, in an accurate way, without self-exploration, with reconsideration. However, that is not how humans gain knowledge about the world.
+                                Furthermore, he claimed that an optimal AGI, which could learn by itself and create new knowledge in its own way, has to be built on a totally new architecture where hardware and software are developed jointly in order to fulfill the unique need of an AI system. In other words, not only do we need to redesign machine learning algorithms, but we also need to redesign the CPU, GPU, and every possible fundamental structure for computing.
+                            </p>
+                            <figure>
+                                <img style='height: 100%; width: 100%; object-fit: contain' src="images/hinton_talks.jpg">
+                                <figcaption>Geoffrey Hinton gives talk in NeurIPS 2022</figcaption>
+                            </figure>
+                            <p>
+
+                            </p>
+                            <p>
+                                This is not the first time he makes comments like this. In fact, Hinton has long been unsatisfied with the lack of focus from academia on rethinking and redesigning the fundamental structure of AI systems.
+                                As early as 2017 (one year after AlphaGo, when everyone still enjoyed the excitement of AI), in <a rel="nofollow" href="https://www.youtube.com/watch?v=Mqt8fs6ZbHk" target="_blank">a talk at Fields Institute of the University of Toronto</a>, he claimed that “people should abandon the idea of back-propagation”.
+                                Later in the same year, his team published <a rel="nofollow" href="https://arxiv.org/abs/1710.09829" target="_blank">a paper called “Dynamic Routing Between Capsules”</a>, trying to create a new structure for neural networks (NN). In his view, that would be a few-year-long project.
+                                At the <a rel="nofollow" href="https://www.youtube.com/watch?v=UX8OubxsY8w" target="_blank">AAAI conference in 2020</a>, he reiterated again that CNN and similar algorithms have “unsolvable fundamental limits”. This time he brought together Yann Lecun and Yoshua Bengio (basically the top three magnets in the deep learning community) to call for people's attention. Finally, three days after the release of ChatGPT, with the proposal of a not-so-established forward-forward algorithm, he urged again the need of rethinking the fundamental structure of deep learning. The only question is, will people actually buy it?
+                            </p>
+                            <p>
+                                Hardly so. After the release of ChatGPT, Google responded immediately by introducing its own LLM, BARD, and started dumping tremendous resources into it. They even introduced another large model called PaLM-E when I was writing the article, unifying visuals, language, and robotics together. Meta also responded by introducing an open-source LLM called LLaMA (they all sound crazily similar).
+                                The government of China has listed LLM as one of the national strategies in competition with America. Start-ups appear one by one, including Stability AI, Jasper, and Anthropic (which receives a 1B investment, in this hard year!). Not to mention a bunch of researchers trying to publish their papers based on ChatGPT. A very funny moment is when people tried to learn a way to attack ChatGPT using a NN model, but another day when they woke up, they realized OpenAI has fixed the bug. How about Hinton's talk in NeurIPS? It seems to have been forgotten.
+                            </p>
+                            <p>
+                                Yann Lecun, the innovator of CNN, received a lot of criticism for pointing out that the public is overreacting to ChatGPT. Lecun has his own idea for redesigning fundamental structures for AI systems. Different from Hinton, who loves to address those limits in a bottom-up way, Lecun prefers <a rel="nofollow" href="https://www.youtube.com/watch?v=VRzvpV9DZ8Y" target="_blank">a top-down framework</a>.
+                                However, many believe that Lecun is simply jealous of the progress of LLMs. People are doubting, if your new framework is as powerful as you claimed, why it is not giving the same level of intelligence as ChatGPT does? That makes supporters of Lecun hard to argue because after all, redesigning fundamental structures takes time.
+                            </p>
+                            <figure>
+                                <img style='height: 100%; width: 100%; object-fit: contain' src="images/stop_slow_wrong_side.gif">
+                                <figcaption>A two sided sign for stop and slow for flaggers on the road</figcaption>
+                            </figure>
+                            <p>
+
+                            </p>
+                            <p>
+                                Why Hinton believes that rethinking fundamental structure is that important? One reason might lie behind the problem of sample efficiency. Our current neural network models require thousands of samples to learn a simple task, such as grabbing a pencil from a table, calculating 7+15, etc. This will become a significant bottleneck if we want to design artificial intelligence systems that are universally applicable. If there is a task where it is hard or near impossible to gather training samples, there is no way for the models to figure a way out.
+                                However, humans are much more adaptive to new tasks, and we are facing tasks that we never see before every day. For example, if we see a flagger carrying a slow sign but there is a group of students walking behind him, we could directly understand that the flagger is using the wrong side. If an AI has never seen this scenario before, could we really trust that it will not run into the students? It is easy, of course, to hard-code some policies that prioritize the semantic of “student walking behind” over “slow sign”, but that is far from the general intelligence we want.
+                            </p>
+                            <p>
+                                Another problem, of course, is consistency. Since current neural networks are still probabilistic models, inconsistency happens frequently even within the same task. A model might get 7+15 wrong one in 1000 times, while for humans if we understand the logic behind 7+15 correctly, there should not be any mistake no matter how many times we ask. If in the future we want our AI systems to write math papers and do physics experiments, we have to solve this consistency problem. A third limit of current AI systems is that they still fail to set complicated tasks and objectives for themselves, train, and update their knowledge in order to gain more abilities.
+                                There are still too many human-defined priors in the training process of our AI systems, which should be removed if we want an AI that could be consistently self-evolving.
+                            </p>
+                            <figure>
+                                <img style='height: 100%; width: 100%; object-fit: contain' src="images/inconsistent_answer.png">
+                                <figcaption>ChatGPT gives inconsistent factorizations for the same question, the first one is correct while the second one is wrong</figcaption>
+                            </figure>
+                            <p>
+
+                            </p>
+                            <p>
+                                Believers of LLMs, however, think all those three limits are not real problems. A <a rel="nofollow" href="https://arxiv.org/abs/2206.07682" target="_blank">recent paper</a> argues that there is an “emergent behavior” where LLMs are able to gain new abilities which are not within the scope of their training tasks, as long as they are large enough. For example, a model could learn to do factorization even though there are no factorization examples inside its training data. In other words, “Scaling up is all you need.” The most famous believer in this theory might be OpenAI's chief scientist Ilya Sutskever. He believes the power of language is still much underexplored because language could be regarded as a compact representation of our physical world.
+                                In fact, during his undergraduate time, he already discusses with Hinton the generalization power of neural network LLMs. Another group of big names who do not think there is a necessity to rethink fundamental structures is David Silver and his mentor, Richard Sutton, they both think the three limits of our current AI system are not because there is anything wrong with the structure of our NN models, but instead, is because we are not designing the rewards <a rel="nofollow" href="https://www.sciencedirect.com/science/article/pii/S0004370221000862" target="_blank">in a correct way</a>.
+                            </p>
+                            <p>
+                                So, how important rethinking fundamental structure really is? Perhaps no people know it for sure. What we know for sure is creating a brand-new paradigm is hard - maybe it takes tens of years - too long for the academic career of a researcher. Nowadays the faculty positions in AI fields have become crazily competitive. One with a citation number over 1000 might just be barely enough for a tenure-track position in a decent university. That means, during the years of the Ph.D. program, a junior researcher has to consistently produce papers, leaving no freedom to devote heavily to projects about things like “redesigning deep learning models”.
+                                Even if he or she is lucky enough to get into the faculty position. It is still very hard to reject the temptation of low-hanging fruits in the deep learning fields using the current architecture. How about researchers in the industry? They are asked to exploit large models' full capability to make profits for the company. Although we might see one or two projects that are as intangible in the industry (like Google's Quantum Computer or Musk's Mars Spaceships), designing hardware and software that uniquely serve an AI's need is far from being “sexy” enough to become one of them. People on Wall Street might think: Why doing so? You guys already have the best large language model in the world. Make money with it.
+                            </p>
+                            <p>
+                                This might be the reason ChatGPT gained so much attention. It really MAKES MONEY. When will this party stop? No one knows. Even the strong believers of LLM like Ilya Sustkever admitted (during <a rel="nofollow" href="https://www.youtube.com/watch?v=fCoavgGZ64Y" target="_blank">his interview</a> with Pieter Abbeel in late 2021) that there might be many unforeseeable challenges sitting in the way of AGI. For example, we all know about Moore's law. In recent years, Moore's law is approaching the fundamental limit of basic physics laws, which means an end of chip scaling-up is close to us. What will become after that? Are we really able to consistently make the model larger and larger? Maybe one day will come when we are forced to try something new, but the best time might have already passed.
+                            </p>
+                        </div>
+                        
+                        <!-- Comments -->
+                        <div>
+                            <h2 class="tm-color-primary tm-post-title">Comments</h2>
+                            <hr class="tm-hr-primary tm-mb-45">
+                            <form action="" class="mb-5 tm-comment-form">
+                                <h2 class="tm-color-primary tm-post-title mb-4">Your comment</h2>
+                                <div class="mb-4">
+                                    <input class="form-control" name="name" type="text">
+                                </div>
+                                <div class="mb-4">
+                                    <input class="form-control" name="email" type="text">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="message" rows="6"></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button class="tm-btn tm-btn-primary tm-btn-small">Submit</button>                        
+                                </div>                                
+                            </form>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
