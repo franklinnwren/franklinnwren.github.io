@@ -55,10 +55,67 @@ https://templatemo.com/tm-553-xtra-blog
                 <div class="col-lg-12 tm-post-col">
                     <div class="tm-post-full">                    
                         <div class="mb-4">
-                            <h2 class="pt-2 tm-color-primary tm-post-title">Is Moravec's Paradox Really a Paradox?</h2>
+                            <h2 class="pt-2 tm-color-primary tm-post-title">Moravec's Paradox, the "Boss" in the Path to AGI?</h2>
                             <p class="tm-mb-40">Sept 9, 2021 posted by Franklin Ren, revised on Nov 28, 2023</p>
                             <p>
-                                If you've ever watched the movie “The Matrix”, you should be familiar with the iconic choice between the blue pill and the red pill. If you haven't watched it yet, here is a short explanation: In this situation, the main character Neo is offered a choice between a blue pill and a red pill. The blue pill represents staying in his comfort zone and continuing to live a normal but illusory life, while the red pill symbolizes confronting a harsh reality full of uncertainties, but also ripe with opportunities. This analogy has been widely adopted by various science fiction narratives to illustrate a fundamental dilemma regarding the future paths of the human race. The question posed is this: Is it preferable for humanity to live in a way where everyone is satisfied and happy, as depicted in works like "Brave New World," or should humans strive to push the boundaries of their technologies, potentially enabling a civilization that spans the universe, despite the immense pains and sacrifices required to achieve this? This debate has persisted for many years, but recently, the progress of artificial general intelligence (AGI) has introduced a third path for humanity to consider.
+                                Scientists have been trying for decades to build robots that could perform physical tasks just like humans - robots that could learn to cook, drive, and assemble furniture together with minimum human supervision - but looks like we are still far from there yet. In the struggle of building such robots, a term comes out: Moravec's Paradox. In a simple description, what Moravec's Paradox is referring to is that tasks hard for humans - for example, chess, Go, and even math problems - are easy for AI, but tasks easy for humans - for example, vision, simple reaction, and body control - are extremely hard for AI. There are even several AI scientists claiming that the last milestone in the path to AGI, is not the Riemann Hypothesis or Unified Field Theory, but winning humans over in a football game.
+                            </p>
+                            <p>
+                                <figure>
+                                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/robots-playing-soccer.jpeg">
+                                    <figcaption>Robots playing soccer</figcaption>
+                                </figure>
+                            </p>
+                            <p>
+                                Moravec's own explanation to this paradox seems to be simple: those “easy” skills for humans are developed from millions of years of evolution, and the strategies learned during our ancestors' interaction with the physical world have been encoded into our brain as a very abstract prior, which could help us to quickly adapt to new physical tasks. In contrast, those “hard” skills have only been there for less than a thousand years and are very new to our brains - our brains are merely not specialized for those tasks. Think about pigeons, pigeons are very good at memorizing locations since their brains are specialized in that task, even though they are not as smart as humans in almost all other tasks. If Moravec's explanation is true, decoding this abstract prior - or finding an easier alternative that could serve the same purpose - will be the hardest thing for AGI.
+                            </p>
+                            <p>
+                                <figure>
+                                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/pigeon.jpeg">
+                                    <figcaption>Pigeons are excellent at memorizing locations, they could always find way home</figcaption>
+                                </figure>
+                            </p>
+                            <p>
+                                I don't want to talk about decoding this prior here - that is the job of neuroscientists - what I want to discuss here is how different AI scientists are trying to find that “alternative path”. One clear observation is that there is no way we could train from all the previous data our ancestors have seen - data from interactions with the real world are extremely costly to collect, so we need something else.
+                            </p>
+                            <p>
+                                <b>Is language the key?</b>
+                            </p>
+                            <p>
+                                The most well-known approach at this time is OpenAI's GPT series, proposed by its chief scientist Ilya Sutskever. The key idea is to use language as a medium to connect different knowledge about the real world. Ilya views language as a natural abstraction of the physical world, hence learning from language could be an efficient way to build up that prior. The strength of this approach is obvious - there are plenty of texts out there on the internet, that make the training process easy, but there are still some questions that remain unanswered. One thing is that, does language contain everything we need? Maybe there are some processes in our brain that we consider to be so natural that we never bother to record them in any texts. Also, generating language to ground truth pairs could be a hard task - we don't have enough ground truth data on the internet. Maybe someone says something wrong about the physical world, and we are unable to validate it.
+                            </p>
+                            <p>
+                                <figure>
+                                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/download.png">
+                                    <figcaption>Language model-boosted robots could execute complex instructions</figcaption>
+                                </figure>
+                            </p>
+                            <p>
+                                <b>We might need to learn in a smarter way.</b>
+                            </p>
+                            <p>
+                                Yann LeCun, another prestige AI scientist, seems to disagree with Ilya's approach. His argument is that when humans convert knowledge to language, a great amount of information is lost, and a great amount of incorrect and redundant information is added, hence large language models will meet their bottleneck very quickly since the prior is not built upon solid ground truth information. LeCun proposes a world model architecture that could possibly optimize the internal learning process of an agent, to utilize the training data more efficiently and accurately. However, a detailed training pipeline is not there yet, and it remains unknown how much this new architecture could help reduce the sample inefficiency in the training data - especially when, it looks like LeCun wants to focus more on video data, which we know is not easy to collect.
+                            </p>
+                            <p>
+                                <figure>
+                                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/world.png">
+                                    <figcaption>LeCun's world model</figcaption>
+                                </figure>
+                            </p>
+                            <p>
+                                <b>We might be seeking the wrong place.</b>
+                            </p>
+                            <p>
+                                AI scientist Richard Sutton and his student David Silver, are more attracted by reward-based approaches. The underlying principle is that if we design the reward in a smart way - not the inefficient way when humans evolved, but with some more targeted reward signal - we could improve the training process of that prior. In other words, we might be seeking the wrong reward in the past time. However, their article is still too vague about how to design rewards with rich signals. Also, could those rewards be auto-generated? If not, populating those rewards into the training environment could be an extremely hard and costly process.
+                            </p>
+                            <p>
+                                <figure>
+                                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/reward.jpg">
+                                    <figcaption>David Silver's architecture</figcaption>
+                                </figure>
+                            </p>
+                            <p>
+                                <b>Some consensus.</b>
                             </p>
                             <p>
                         </div>
